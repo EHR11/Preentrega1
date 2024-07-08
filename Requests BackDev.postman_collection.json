@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "42118b2e-af3f-4df2-b0d7-22238c4a4491",
+		"name": "Requests BackDev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34451712"
+	},
+	"item": [
+		{
+			"name": "api/products/:pid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/products/1720391603967",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1720391603967"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/products/?limit=999",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "999"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/carts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carts?limit=100",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carts"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/carts/:cid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/carts/1720395187557",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carts",
+						"1720395187557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"{{$randomProductName}}\",\r\n    \"description\":\"{{$randomPhrase}}\",\r\n    \"code\":\"{{$randomUUID}}\",\r\n    \"price\":{{$randomPrice}},\r\n    \"status\":{{$randomBoolean}},\r\n    \"stock\":{{$randomInt}},\r\n    \"category\":\"{{$randomProductMaterial}}\",\r\n    \"thumbnails\":[\r\n        \"{{$randomAbstractImage}}\",\r\n        \"{{$randomAbstractImage}}\",\r\n        \"{{$randomAbstractImage}}\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/carts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"products\":[\r\n       {\r\n        \"pid\":1720391594589,\r\n        \"quantity\":{{$randomInt}}\r\n       }, \r\n       {\r\n        \"pid\":1720391598682,\r\n        \"quantity\":{{$randomInt}}\r\n       }, \r\n       {\r\n        \"pid\":1720391600229,\r\n        \"quantity\":{{$randomInt}}\r\n        }, \r\n       {\r\n        \"pid\":1720391600982,\r\n        \"quantity\":{{$randomInt}}\r\n        }, \r\n       {\r\n        \"pid\":1720391601757,\r\n        \"quantity\":{{$randomInt}}\r\n       }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/carts/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/carts Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"{{$randomProductName}}\",\r\n    \"description\":\"{{$randomPhrase}}\",\r\n    \"code\":\"{{$randomUUID}}\",\r\n    \"price\":{{$randomPrice}},\r\n    \"status\":{{$randomBoolean}},\r\n    \"stock\":{{$randomInt}},\r\n    \"category\":\"{{$randomProductMaterial}}\",\r\n    \"thumbnails\":[\r\n        \"{{$randomAbstractImage}}\",\r\n        \"{{$randomAbstractImage}}\",\r\n        \"{{$randomAbstractImage}}\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/products/:pid",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\"{{$randomProductAdjective}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/products/1720391602525",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1720391602525"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/products/:pid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/products/1720391604691",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1720391604691"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
