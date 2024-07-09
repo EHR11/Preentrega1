@@ -34,3 +34,16 @@ Para el carrito, el cual tendrá su router en _/api/carts/_, configurar dos ruta
 La persistencia de la información se implementará utilizando el file system, donde los archivos "productos,json" y "carrito.json", respaldan la información. 
 No es necesario realizar ninguna implementación visual, todo el flujo se puede realizar por Postman o por el cliente de tu preferencia.
 
+<h2>Requisitos: </h2>
+  - Express
+
+<h2>Instalación: </h2>
+  - git clone https://github.com/EHR11/Preentrega1
+  - cd Preentrega1
+  - npm install
+
+<h2>Ejecución del servidor:</h2>
+  - npm start
+
+<h2>Llamados:</h2>
+  - Utilizar la coleccion de Postman del repo
