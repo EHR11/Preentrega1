@@ -27,7 +27,7 @@
 
 <h2>Instalación: </h2>
 
-  - git clone https://github.com/EHR11/Preentrega1/Preentrega2
+  - git clone https://github.com/EHR11/Preentrega1/tree/Preentrega2
   - cd Preentrega
   - npm install
 
