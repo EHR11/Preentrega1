@@ -1,0 +1,24 @@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+            <tr>
+                <td>{{pid}}</td>
+                <td>{{title}}</td>
+                <td>{{description}}</td>
+                <td>{{price}}</td>
+                <td>{{status}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

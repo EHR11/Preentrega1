@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row justify-content-between">
+        <table class="table col-8" id="table">
+            <thead>
+                <tr>
+                    <th>PID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+        <form id="form" class="col-4" action="">
+            <label for="titleInput"> Title:</label>
+            <input id="titleInput" class="form-control" type="text" name="title"></input>
+            <br>
+            <label for="descriptionInput"> Description:</label>
+            <input id="descriptionInput" class="form-control" type="text" name="description"/>
+            <br>
+            <label for="codeInput"> Code:</label>
+            <input id="codeInput" class="form-control" type="text" name="code"/>
+            <br>
+            <label for="priceInput"> Price:</label>
+            <input id="priceInput" class="form-control" type="number" step="0.01" name="price"/>
+            <br>
+            <label for="categoryInput"> Category:</label>
+            <input id="categoryInput" class="form-control" type="text" name="category"/>
+            <br>
+            <label for="statusInput"> Status:</label>
+            <input id="statusInput" class="form-control" type="checkbox" name="status" value="true"/>
+            <br>
+            <label for="stockInput"> Stock:</label>
+            <input id="stockInput" class="form-control" type="text" name="stock"/>
+            <br>
+            <input type="submit"  value="Create Product" />
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/realTimeProducts.js"></script>
